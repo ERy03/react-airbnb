@@ -2,17 +2,64 @@
 
 ### Creating reusable components
 
-Understanding the concept of `props`
+Understanding the concept of `props` (properties)
 
-JSX allows users to write JS
+``` jsx
+// App.js
+function App() {
+    return (
+        <div className="contacts">
+            <Contact
+                img="./images/mr-whiskerson.png"
+                name="Mr. Whiskerson"
+                phone="(212) 555-1234"
+                email="mr.whiskaz@catnap.meow"
+            />
+        </div>
+    )
+}
+// img, name, phone, email are all props
+
+// Contact.js
+export default function Contact(props) {
+    // console.log(props)
+    return (
+        <div className="contact-card">
+            <img src={props.img}/>
+            <h3>{props.name}</h3>
+            <div className="info-group">
+                <img src="./images/phone-icon.png" />
+                <p>{props.phone}</p>
+            </div>
+            <div className="info-group">
+                <img src="./images/mail-icon.png" />
+                <p>{props.email}</p>
+            </div>
+        </div>
+    )
+}
+```
+What does `console.log(props)` return? An object with properties that match
+
+``` javascript
+{img: "./images/mr-whiskerson.png",
+  name: "Mr. Whiskerson",
+  phone: "(212) 555-1234",
+  email: "mr.whiskaz@catnap.meow"
+}
+```
+
+JSX allows users to write JS. Code inside `{}` is interpreted as regular JS.
 
 ``` jsx
 function App() {
+    // Logic
     const firstName = "Joe"
-    const lastName = "Schmoe"
+    const currentTime = new Date().getHours() % 12
 
+    // Display
     return (
-        <h1>Hello {firstName} {lastName}!</h1>
+        <h1>Hello {firstName}, it's {currentTime} o'clock!</h1>
     )
 }
 ```
