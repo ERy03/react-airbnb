@@ -30,6 +30,7 @@ a {
 }
 
 /* navbar */
+
 .navbar {
   height: 70px;
   background-color: #FFFFFF;
@@ -73,9 +74,28 @@ section {
   max-width: 60%;
 }
 
+/* card */
 
+.card {
+  width: 176px;
+  font-size: 12px;
+  line-height: 22px;
+}
 
+.card--image {
+  width: 100%;
+  border-radius: 9px;
+}
 
+.card--stats {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.card--star {
+  height: 14px;
+}
 
 
 @media only screen and (max-width: 600px) {
