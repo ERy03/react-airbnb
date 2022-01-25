@@ -57,6 +57,28 @@ What does `console.log(props)` return? An object with properties that match
 }
 ```
 
+We can also deconstruct the `prop`
+
+``` jsx
+export default function Contact({img, name, phone, email}}) {
+    // console.log(props)
+    return (
+        <div className="contact-card">
+            <img src={img}/>
+            <h3>{name}</h3>
+            <div className="info-group">
+                <img src="./images/phone-icon.png" />
+                <p>{phone}</p>
+            </div>
+            <div className="info-group">
+                <img src="./images/mail-icon.png" />
+                <p>{email}</p>
+            </div>
+        </div>
+    )
+}
+```
+
 JSX allows users to write JS. Code inside `{}` is interpreted as regular JS.
 
 ``` jsx
