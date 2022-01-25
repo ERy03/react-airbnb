@@ -25,6 +25,10 @@ a {
   font-weight: bold;
 }
 
+.gray {
+  color: #918E9B;
+}
+
 /* navbar */
 .navbar {
   height: 70px;
