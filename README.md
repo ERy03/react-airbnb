@@ -1,3 +1,22 @@
+# Notes
+
+### Creating reusable components
+
+Understanding the concept of `props`
+
+JSX allows users to write JS
+
+``` jsx
+function App() {
+    const firstName = "Joe"
+    const lastName = "Schmoe"
+
+    return (
+        <h1>Hello {firstName} {lastName}!</h1>
+    )
+}
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
