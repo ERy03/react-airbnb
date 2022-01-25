@@ -47,6 +47,7 @@ export default function Contact(props) {
     )
 }
 ```
+
 What does `console.log(props)` return? An object with properties that match
 
 ``` javascript
@@ -60,7 +61,7 @@ What does `console.log(props)` return? An object with properties that match
 We can also deconstruct the `prop`
 
 ``` jsx
-export default function Contact({img, name, phone, email}}) {
+export default function Contact({img, name, phone, email}) {
     // console.log(props)
     return (
         <div className="contact-card">
