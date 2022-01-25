@@ -11,6 +11,7 @@ function App() {
       {/* <Hero /> */}
       <Card
       img="katie-zaferes.png"
+      status="SOLD OUT"
       rating={5.0}
       review={6}
       country="USA"
