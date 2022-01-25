@@ -2,7 +2,7 @@
 
 ### Creating reusable components
 
-Understanding the concept of `props` (properties)
+Understanding the concept of `props` (properties).
 We can add props (similar to html attributes) to our custom components.
 
 ⚠️  We cannot pass custom props to a native DOM element.
@@ -10,7 +10,7 @@ ex `<div customprop={true}>`
 Why?
 The JSX we use to describe native DOM elements will be turned into REAL DOM elements by React. And real DOM elements
 only have the prooperties/attributes specified in the HTML specification.
-In the example above, DOM elements don't include properties like `customprop`.        
+In the example above, DOM elements don't include properties like `customprop`.
 
 ``` jsx
 // App.js
