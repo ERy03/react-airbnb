@@ -51,7 +51,7 @@ export default function Contact(props) {
 What does `console.log(props)` return? An object with properties that match
 
 ``` javascript
-{img: "./images/mr-whiskerson.png",
+{ img: "./images/mr-whiskerson.png",
   name: "Mr. Whiskerson",
   phone: "(212) 555-1234",
   email: "mr.whiskaz@catnap.meow"
