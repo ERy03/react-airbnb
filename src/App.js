@@ -1,6 +1,7 @@
 import React from "react"
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
+import Card from "./components/Card"
 import './style.css'
 
 function App() {
@@ -8,6 +9,14 @@ function App() {
     <div className="App">
       < Navbar />
       <Hero />
+      <Card
+      img="katie-zaferes.png"
+      rating={5.0}
+      review={6}
+      country="Japan"
+      title="Life Lessons with Katie Zaferes"
+      price={136}
+      />
     </div>
   );
 }
