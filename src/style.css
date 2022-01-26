@@ -76,9 +76,19 @@ section {
 
 /* card */
 
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+
 .card {
   width: 176px;
   font-size: 12px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
   line-height: 22px;
   position: relative;
 }
