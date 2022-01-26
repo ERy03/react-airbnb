@@ -11,12 +11,12 @@ function App() {
       <Card
       key={item.id}
       img={item.coverImg}
-      status="SOLD OUT"
       rating={item.stats.rating}
       review={item.stats.reviewCount}
-      country={item.location}
+      location={item.location}
       title={item.title}
       price={item.price}
+      openSpots={item.openSpots}
       />
     )
   })
