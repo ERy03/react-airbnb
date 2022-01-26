@@ -6,7 +6,7 @@ import data from './data'
 import './style.css'
 
 function App() {
-  const card = data.map(item => {
+  const cards = data.map(item => {
     return(
       <Card
       key={item.id}
@@ -24,7 +24,9 @@ function App() {
     <div className="App">
       < Navbar />
       <Hero />
-      {card}
+      <section className="cards-list">
+        {cards}
+      </section>
     </div>
   );
 }
