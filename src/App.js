@@ -10,7 +10,7 @@ function App() {
     return(
       <Card
       key={item.id}
-      item={item}
+      item={item} // we can use spread as well -> {...item}
       />
     )
   })
